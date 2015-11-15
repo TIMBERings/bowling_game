@@ -1,3 +1,4 @@
+# Class defining a single frame of a game
 class Frame
   attr_accessor :frame, :first, :second, :third, :mark, :split, :score
 
