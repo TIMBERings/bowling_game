@@ -12,15 +12,15 @@ class Frame
   end
 
   def total
-    @second ? @first.count + @second.count : @first.count
+    @second ? @first + @second : @first
   end
 
   def strike?
-    @first.count == 10
+    @first == 10
   end
 
   def spare?
-    @first.count != 10 && @first.count + @second.count == 10
+    @first != 10 && @first + @second == 10
   end
 
   def open?
